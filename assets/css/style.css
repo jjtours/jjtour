@@ -7380,118 +7380,41 @@ tour page  */
 
 /* New  */
 
-/* Universal image fitting rules */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Tour cards images */
-.tour-one__image {
-    position: relative;
-    overflow: hidden;
-    height: 300px;
-}
-
-.tour-one__image > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-/* Team member images */
-.team-one__image {
-    position: relative;
-    overflow: hidden;
-    height: 300px;
-}
-
-.team-one__image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Gallery images */
-.gallery-one__single {
-    position: relative;
-    overflow: hidden;
-    height: 300px;
-}
-
-.gallery-one__single img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Destination images */
-.destinations-two__single {
-    position: relative;
-    overflow: hidden;
-    height: 400px;
-}
-
-.destinations-two__single img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Testimonial author images */
-.testimonials-one__info img {
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-/* Responsive breakpoints */
-@media (max-width: 1199px) {
-    .tour-one__image,
-    .team-one__image,
-    .gallery-one__single {
-        height: 280px;
-    }
-    .destinations-two__single {
-        height: 350px;
+/* Banner mobile fixes */
+@media only screen and (max-width: 991px) {
+    .banner-one {
+        background-size: cover;
+        background-position: center center;
+        min-height: 60vh;
+        padding: 100px 0;
     }
 }
 
-@media (max-width: 991px) {
-    .tour-one__image,
-    .team-one__image,
-    .gallery-one__single {
-        height: 250px;
+@media only screen and (max-width: 767px) {
+    .banner-one {
+        background-attachment: scroll;
+        min-height: 50vh;
+        padding: 80px 0;
+        background-position: center top;
     }
-    .destinations-two__single {
-        height: 300px;
+    
+    .banner-one h2 {
+        font-size: 32px;
+        line-height: 1.2;
     }
-}
-
-@media (max-width: 767px) {
-    .tour-one__image,
-    .team-one__image,
-    .gallery-one__single {
-        height: 220px;
-    }
-    .destinations-two__single {
-        height: 250px;
-    }
-    .testimonials-one__info img {
-        width: 60px;
-        height: 60px;
+    
+    .banner-one p {
+        font-size: 18px;
     }
 }
 
-@media (max-width: 575px) {
-    .tour-one__image,
-    .team-one__image,
-    .gallery-one__single {
-        height: 200px;
+@media only screen and (max-width: 480px) {
+    .banner-one {
+        min-height: 40vh;
+        padding: 60px 0;
     }
-    .destinations-two__single {
-        height: 220px;
+    
+    .banner-one h2 {
+        font-size: 28px;
     }
 }
