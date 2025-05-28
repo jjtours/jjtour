@@ -7380,30 +7380,31 @@ tour page  */
 
 /* New  */
 
-/* For tour page images */
+/* Universal image fitting rules */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Tour cards images */
 .tour-one__image {
     position: relative;
     overflow: hidden;
+    height: 300px;
 }
 
 .tour-one__image > img {
     width: 100%;
-    height: 300px;
+    height: 100%;
     object-fit: cover;
+    display: block;
 }
 
-@media (max-width: 991px) {
-    .tour-one__image > img {
-        height: 250px;
-    }
-}
-
-/* For team member images */
+/* Team member images */
 .team-one__image {
     position: relative;
     overflow: hidden;
     height: 300px;
-    border-radius: 8px 8px 0 0;
 }
 
 .team-one__image img {
@@ -7412,40 +7413,85 @@ tour page  */
     object-fit: cover;
 }
 
-@media (max-width: 991px) {
-    .team-one__image {
-        height: 250px;
-    }
+/* Gallery images */
+.gallery-one__single {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
 }
 
-@media (max-width: 575px) {
-    .team-one__image {
-        height: 220px;
-    }
-}
-
-/* For gallery images */
 .gallery-one__single img {
     width: 100%;
-    height: 300px;
+    height: 100%;
     object-fit: cover;
 }
 
-/* For destination images */
+/* Destination images */
+.destinations-two__single {
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+}
+
 .destinations-two__single img {
     width: 100%;
-    height: 400px;
+    height: 100%;
     object-fit: cover;
+}
+
+/* Testimonial author images */
+.testimonials-one__info img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1199px) {
+    .tour-one__image,
+    .team-one__image,
+    .gallery-one__single {
+        height: 280px;
+    }
+    .destinations-two__single {
+        height: 350px;
+    }
 }
 
 @media (max-width: 991px) {
-    .destinations-two__single img {
+    .tour-one__image,
+    .team-one__image,
+    .gallery-one__single {
+        height: 250px;
+    }
+    .destinations-two__single {
         height: 300px;
     }
 }
 
-@media (max-width: 575px) {
-    .destinations-two__single img {
+@media (max-width: 767px) {
+    .tour-one__image,
+    .team-one__image,
+    .gallery-one__single {
+        height: 220px;
+    }
+    .destinations-two__single {
         height: 250px;
+    }
+    .testimonials-one__info img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 575px) {
+    .tour-one__image,
+    .team-one__image,
+    .gallery-one__single {
+        height: 200px;
+    }
+    .destinations-two__single {
+        height: 220px;
     }
 }
