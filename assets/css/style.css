@@ -7376,3 +7376,76 @@ tour page  */
     height: 300px;
     object-fit: cover;
 }
+
+
+/* New  */
+
+/* For tour page images */
+.tour-one__image {
+    position: relative;
+    overflow: hidden;
+}
+
+.tour-one__image > img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+@media (max-width: 991px) {
+    .tour-one__image > img {
+        height: 250px;
+    }
+}
+
+/* For team member images */
+.team-one__image {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    border-radius: 8px 8px 0 0;
+}
+
+.team-one__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 991px) {
+    .team-one__image {
+        height: 250px;
+    }
+}
+
+@media (max-width: 575px) {
+    .team-one__image {
+        height: 220px;
+    }
+}
+
+/* For gallery images */
+.gallery-one__single img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* For destination images */
+.destinations-two__single img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+@media (max-width: 991px) {
+    .destinations-two__single img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 575px) {
+    .destinations-two__single img {
+        height: 250px;
+    }
+}
