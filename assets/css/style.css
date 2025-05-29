@@ -7469,11 +7469,15 @@ tour page  */
 
 
 /* For Page Header */
+/* Universal image fixes for all screen sizes */
 .page-header {
     position: relative;
+    width: 100%;
+    height: 50vh;
+    min-height: 400px;
     background-size: cover !important;
-    background-position: center !important;
-    min-height: 300px;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -7494,9 +7498,27 @@ tour page  */
     z-index: 1;
 }
 
+/* Laptop view (larger screens) */
+@media (min-width: 1200px) {
+    .page-header {
+        height: 60vh;
+        min-height: 500px;
+    }
+}
+
+/* Tablet view */
+@media (max-width: 991px) {
+    .page-header {
+        height: 40vh;
+        min-height: 350px;
+    }
+}
+
+/* Mobile view */
 @media (max-width: 767px) {
     .page-header {
-        min-height: 200px;
+        height: 30vh;
+        min-height: 250px;
         background-attachment: scroll !important;
     }
 }
