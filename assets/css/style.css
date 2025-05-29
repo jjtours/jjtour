@@ -7522,5 +7522,38 @@ tour page  */
         background-attachment: scroll !important;
     }
 }
-/* For Slider */
+/* For white background  */
+/* Mobile padding/background fixes */
+@media (max-width: 991px) {
+    .main-nav__logo-box {
+        background-color: #ffffff !important;
+        padding: 15px;
+        max-width: 100%;
+        margin: 0;
+    }
 
+    .header-navigation {
+        background-color: #ffffff !important;
+    }
+
+    .side-menu__block-inner {
+        background-color: #ffffff !important;
+    }
+
+    .main-nav__main-navigation {
+        background-color: #ffffff !important;
+    }
+
+    .mobile-nav__container {
+        background-color: #ffffff !important;
+    }
+}
+
+/* Ensure consistent colors in dropdown/mobile menu */
+.side-menu__block .main-nav__navigation-box > li > a {
+    color: var(--thm-black) !important;
+}
+
+.mobile-nav__container .main-nav__navigation-box > li > a {
+    color: var(--thm-black) !important;
+}
