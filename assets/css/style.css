@@ -7418,3 +7418,51 @@ tour page  */
         font-size: 28px;
     }
 }
+
+
+/* Video section mobile fixes */
+.video-one {
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: scroll;
+    padding: 150px 0;
+    min-height: 50vh;
+}
+
+@media only screen and (max-width: 991px) {
+    .video-one {
+        padding: 100px 0;
+        min-height: 40vh;
+    }
+    
+    .video-one h3 {
+        font-size: 28px;
+        line-height: 1.4;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .video-one {
+        padding: 80px 0;
+        background-position: center top;
+    }
+    
+    .video-one h3 {
+        font-size: 24px;
+        br {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .video-one {
+        padding: 60px 0;
+        min-height: 30vh;
+    }
+    
+    .video-one h3 {
+        font-size: 20px;
+    }
+}
