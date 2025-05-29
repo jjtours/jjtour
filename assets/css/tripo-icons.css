@@ -1,90 +1,87 @@
 @font-face {
-  font-family: 'JJ Travels-icon';
-  src:  url('../fonts/JJ Travels-icon.eot?uzh45i');
-  src:  url('../fonts/JJ Travels-icon.eot?uzh45i#iefix') format('embedded-opentype'),
-    url('../fonts/JJ Travels-icon.ttf?uzh45i') format('truetype'),
-    url('../fonts/JJ Travels-icon.woff?uzh45i') format('woff'),
-    url('../fonts/JJ Travels-icon.svg?uzh45i#JJ Travels-icon') format('svg');
+  font-family: 'tripo-icon';
+  src: url('../fonts/tripo-icon.eot?uzh45i');
+  src: url('../fonts/tripo-icon.eot?uzh45i#iefix') format('embedded-opentype'),
+       url('../fonts/tripo-icon.ttf?uzh45i') format('truetype'),
+       url('../fonts/tripo-icon.woff?uzh45i') format('woff'),
+       url('../fonts/tripo-icon.svg?uzh45i#tripo-icon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="JJ Travels-icon-"], [class*=" JJ Travels-icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'JJ Travels-icon' !important;
-  speak: none;
+[class^="tripo-icon-"], [class*=" tripo-icon-"] {
+  font-family: 'tripo-icon' !important;
+  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.JJ Travels-icon-squares:before {
+.tripo-icon-squares:before {
   content: "\e913";
 }
-.JJ Travels-icon-list-menu:before {
+.tripo-icon-list-menu:before {
   content: "\e914";
 }
-.JJ Travels-icon-plus-symbol:before {
+.tripo-icon-plus-symbol:before {
   content: "\e912";
 }
-.JJ Travels-icon-message:before {
+.tripo-icon-message:before {
   content: "\e900";
 }
-.JJ Travels-icon-phone-call:before {
+.tripo-icon-phone-call:before {
   content: "\e901";
 }
-.JJ Travels-icon-placeholder:before {
+.tripo-icon-placeholder:before {
   content: "\e902";
 }
-.JJ Travels-icon-suitcase:before {
+.tripo-icon-suitcase:before {
   content: "\e903";
 }
-.JJ Travels-icon-plane-ticket:before {
+.tripo-icon-plane-ticket:before {
   content: "\e904";
 }
-.JJ Travels-icon-hang-gliding:before {
+.tripo-icon-hang-gliding:before {
   content: "\e905";
 }
-.JJ Travels-icon-paragliding:before {
+.tripo-icon-paragliding:before {
   content: "\e906";
 }
-.JJ Travels-icon-sunset:before {
+.tripo-icon-sunset:before {
   content: "\e907";
 }
-.JJ Travels-icon-deer:before {
+.tripo-icon-deer:before {
   content: "\e908";
 }
-.JJ Travels-icon-flag:before {
+.tripo-icon-flag:before {
   content: "\e909";
 }
-.JJ Travels-icon-left-arrow:before {
+.tripo-icon-left-arrow:before {
   content: "\e90a";
 }
-.JJ Travels-icon-right-arrow:before {
+.tripo-icon-right-arrow:before {
   content: "\e90b";
 }
-.JJ Travels-icon-feedback:before {
+.tripo-icon-feedback:before {
   content: "\e90c";
 }
-.JJ Travels-icon-user-experience:before {
+.tripo-icon-user-experience:before {
   content: "\e90d";
 }
-.JJ Travels-icon-reliability:before {
+.tripo-icon-reliability:before {
   content: "\e90e";
 }
-.JJ Travels-icon-tour-guide:before {
+.tripo-icon-tour-guide:before {
   content: "\e90f";
 }
-.JJ Travels-icon-avatar:before {
+.tripo-icon-avatar:before {
   content: "\e910";
 }
-.JJ Travels-icon-magnifying-glass:before {
+.tripo-icon-magnifying-glass:before {
   content: "\e911";
 }
