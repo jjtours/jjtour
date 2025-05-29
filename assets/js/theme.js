@@ -539,21 +539,34 @@
 
 // ...existing code...
 
+// ...existing code...
+
     // Add delayed developer credit with auto-hide
     setTimeout(function() {
         var developerCredit = document.createElement('p');
         developerCredit.className = 'developer-credit';
-        developerCredit.style.cssText = 'color: #fff; margin-top: 10px; text-align: center; opacity: 0; animation: fadeInOut 2s ease-in-out forwards;';
+        developerCredit.style.cssText = `
+            color: #fff;
+            margin-top: 10px;
+            text-align: center;
+            opacity: 0;
+            animation: fadeInOut 2s ease-in-out forwards;
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 9999;
+            width: 100%;
+            background: rgba(0,0,0,0.7);
+            padding: 10px;
+        `;
         developerCredit.innerHTML = 'Developed by Rantideb';
         
-        var container = document.querySelector('.site-footer__bottom .container');
-        if (container) {
-            container.appendChild(developerCredit);
-            // Remove the element after animation
-            setTimeout(function() {
-                developerCredit.remove();
-            }, 1000); // Remove after 1 second
-        }
+        document.body.appendChild(developerCredit);
+        // Remove the element after animation
+        setTimeout(function() {
+            developerCredit.remove();
+        }, 1000); // Remove after 1 second
     }, 5000); // Show after 5 seconds
 
     // Add fadeInOut animation
@@ -563,6 +576,12 @@
             0% { opacity: 0; }
             50% { opacity: 1; }
             100% { opacity: 0; }
+        }
+        @media (max-width: 767px) {
+            .developer-credit {
+                font-size: 14px !important;
+                padding: 8px !important;
+            }
         }
     `;
     document.head.appendChild(style);
